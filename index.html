@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulation on Studnets</title>
+
+</head>
+
+<div>
+    <form name="myForm">
+        <h1>Manipulate Students </h1>
+        <h2>functions include:</h2>
+
+        <label>Search
+            <input type="radio" name="operation" value="1">
+        </label><br>
+        <label>Add
+            <input type="radio" name="operation" value="2">
+        </label><br>
+        <label>Remove
+            <input type="radio" name="operation" value="3">
+        </label><br>
+        <label>Display
+            <input type="radio" name="operation" value="4" checked>
+        </label><br>
+        <label>Sort
+            <input type="radio" name="operation" value="5">
+        </label><br>
+        <label>Random
+            <input type="radio" name="operation" value="6">
+        </label><br>
+        <label>Change
+            <input type="radio" name="operation" value="7">
+        </label>
+    </form>
+    <label>
+        <br>
+        Enter arguments for the function (Separated by ',' no space after ',' )
+        <br>
+        <input type="text" id="argument" width="30ch" onchange="operate()">
+        <button onclick="operate()">Done</button>
+    </label>
+    <br>
+    <div id="change">
+
+    </div>
+
+</div>
+<script src="operations.js"></script>
+
+<body>
+
+</body>
+
+</html>
